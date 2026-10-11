@@ -280,7 +280,7 @@ export default function Home() {
                     name="username"
                     value={signUpForm.username}
                     required
-                    placeholder="Famuyiwa Emmanuel"
+                    placeholder="Haliyah"
                     onChange={handleSignUpChange}
                     className={inputClass}
                   />
