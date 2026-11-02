@@ -223,7 +223,7 @@ export default function Home() {
                     name="email"
                     value={signInForm.email}
                     required
-                    placeholder="famuyiwaemmanuel565@gmail.com"
+                    placeholder="xyz@gmail.com"
                     onChange={handleSignInChange}
                     className={inputClass}
                   />
@@ -280,7 +280,7 @@ export default function Home() {
                     name="username"
                     value={signUpForm.username}
                     required
-                    placeholder="Haliyah"
+                    placeholder="John Doe"
                     onChange={handleSignUpChange}
                     className={inputClass}
                   />
@@ -291,7 +291,7 @@ export default function Home() {
                     type="email"
                     name="email"
                     value={signUpForm.email}
-                    placeholder="famuyiwaemmanuel565@gmail.com"
+                    placeholder="xyz@gmail.com"
                     required
                     onChange={handleSignUpChange}
                     className={inputClass}
