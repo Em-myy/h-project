@@ -223,7 +223,7 @@ export default function Home() {
                     name="email"
                     value={signInForm.email}
                     required
-                    placeholder="xyz@gmail.com"
+                    placeholder="xyz@gmail.co"
                     onChange={handleSignInChange}
                     className={inputClass}
                   />
