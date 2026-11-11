@@ -1,36 +1,139 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Document Digitization System
+
+A web-based document digitization platform designed to help staff create, edit, manage and export digital documents through a centralized system.
+
+The application provides a staff portal with authentication and department-based registration, alongside a rich-text document editing experience.
+
+## Live Demo
+
+<https://h-project-psi.vercel.app>
+
+## Features
+
+### Authentication and User Management
+
+- Staff account registration.
+- Secure email and password authentication.
+- Department selection during registration.
+- Supabase-powered authentication.
+- Protected access to the application.
+
+### Document Management
+
+- Rich-text document editing.
+- Text formatting and underline support.
+- Text alignment options.
+- Document export to Microsoft Word format.
+- Document export to PDF format.
+
+### User Experience
+
+- Responsive user interface.
+- Light and dark theme support.
+- Form validation and error feedback.
+- Interactive interface with loading and success states.
+
+## Technology Stack
+
+| Category         | Technologies                         |
+| ---------------- | ------------------------------------ |
+| Framework        | Next.js 16                           |
+| Frontend         | React 19                             |
+| Language         | TypeScript                           |
+| Styling          | Tailwind CSS 4                       |
+| Authentication   | Supabase Auth                        |
+| Database         | Supabase                             |
+| Rich Text Editor | Tiptap                               |
+| Icons            | Lucide React                         |
+| Document Export  | html-docx-js-typescript, html2pdf.js |
+| Deployment       | Vercel                               |
+
+## Project Structure
+
+```text
+h-project/
+│
+├── app/                  # Application routes and pages
+│
+├── components/           # Reusable UI components
+│
+├── context/              # Application context and state
+│
+├── public/               # Static assets
+│
+├── utils/                # Utility functions and configurations
+│
+├── proxy.ts              # Request handling
+│
+├── next.config.ts        # Next.js configuration
+│
+├── package.json          # Dependencies and scripts
+│
+└── README.md
+```
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to run the project locally.
+
+### Prerequisites
+
+- Node.js
+- npm
+- A Supabase account and project
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Em-myy/h-project.git
+
+cd h-project
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env.local` file in the root directory and add your Supabase credentials:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+```
+
+Replace the placeholder values with your actual Supabase project credentials.
+
+### 4. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command         | Description                           |
+| --------------- | ------------------------------------- |
+| `npm run dev`   | Starts the development server         |
+| `npm run build` | Builds the application for production |
+| `npm run start` | Starts the production server          |
+| `npm run lint`  | Runs ESLint                           |
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The application is deployed using Vercel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Live URL: https://h-project-psi.vercel.app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
+**Rufai Haliyah**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+_Built to make document digitization and management more accessible and efficient._
